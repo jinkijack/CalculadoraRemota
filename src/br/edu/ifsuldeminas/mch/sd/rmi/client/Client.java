@@ -23,6 +23,7 @@ public class Client {
 			System.out.println(calc.bin(91));
 			System.out.println(calc.decimal(1011011));
 			System.out.println(calc.hex(91));
+			System.out.println(calc.porcentagem(1000,10));
 			List<String> lastOperations =
 					calc.lastOperations(2);
 			for (String operation : lastOperations)

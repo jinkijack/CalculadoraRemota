@@ -1,4 +1,5 @@
 package br.edu.ifsuldeminas.mch.sd.rmi.server;
+
 import java.rmi.RemoteException;
 import java.util.ArrayList;
 import java.util.Date;
@@ -65,6 +66,12 @@ public class Calculator implements Operations {
 	public String hex(Number x)throws RemoteException{
 		String result = Integer.toHexString(x.intValue());
 		log(x, "Hexadecimal",result);
+		return result;
+	}
+
+	public Number porcentagem(Number x, Number y) throws RemoteException {
+		Number result = x.doubleValue() * (y.doubleValue()/100);
+		log(y, "% de", x, result);
 		return result;
 	}
 

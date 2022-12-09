@@ -16,6 +16,7 @@ public interface Operations extends Remote {
 	Number decimal(Number x) throws  RemoteException;
 	String bin(Number x) throws RemoteException;
 	String hex(Number x) throws RemoteException;
+	Number porcentagem(Number x, Number y) throws RemoteException;
 	List<String> lastOperations(int howMany) throws RemoteException;
 	List<String> lastOperations() throws RemoteException;
 	
